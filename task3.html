@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task_3</title>
+  </head>
+  <body>
+    <script>
+      
+      let date = prompt("Введите день месяца");      
+      let month = prompt("Введите номер месяца");      
+      let year = prompt("Введите год");
+      
+      if ( (year % 4 != 0 & month == 2 & date == 28) || (year % 4 == 0 & month == 2 & date == 29)  || ((month == 4 || 6 || 9 || 11)  & date == 30) ) {
+
+          date = 1;
+          month++;  
+
+      }
+
+      else if (month == 12 & date == 31) { 
+
+        date = 1;
+        month = 1;
+        year++;  
+
+      }
+      
+      else {
+
+        date++;
+        
+      }        
+
+        alert("Следующая дата: " + date + "/" + month + "/" + year);
+      
+    </script>
+  </body>
+</html>

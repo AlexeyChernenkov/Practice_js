@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task_10</title>
+</head>
+<body>
+    <script>
+
+    let scores = 0;
+    let q;
+
+    q = prompt("Укажите дату начала Второй Мировой Войны\na)1 сентября 1941 года\nb)22 июня 1941 года\nc)1 сентября 1939 года");
+
+    if(q == "с") scores += 2;
+
+    q = prompt("Укажите длительность Столетлей Войны\na)100 лет\nb)116 лет" +
+        "\nc)98 лет");
+
+    if(q == "b") scores += 2;
+
+    q = prompt("Какой это по счету вопрос?\na)4\nb)3\nc)я не умею считать");
+
+    if(q == "b") scores += 2;
+
+    alert(`Количество ваших баллов: ${scores} из 6 возможных`)
+
+    </script>
+</body>
+</html>

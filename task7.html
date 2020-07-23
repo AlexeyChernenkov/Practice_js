@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task_7</title>
+</head>
+<body>
+    <script>
+        function isPalindrome(str) {
+        var strLen = str.length,
+        strReverse = str.split('').reverse().join('');
+        if (strReverse == str) {
+        return 'yes';
+        } else {
+        return 'no';
+        }
+        }
+
+        let check = isPalindrome (prompt("Введите слово для проверки на палиндром:"));
+        alert("Веденное слово палиндром? " + check);
+
+    </script>
+</body>
+</html>
